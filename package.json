@@ -1,0 +1,20 @@
+{
+  "name": "camsymplectic",
+  "description": "Cambridge University - Symplectic API",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nicolaasmatthijs/camsymplectic",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nicolaasmatthijs/camsymplectic.git"
+  },
+  "dependencies": {
+    "connect": "latest",
+    "express": "latest",
+    "request": "latest",
+    "underscore": "latest",
+    "xml2js": "latest"
+  },
+  "engines": {
+    "node": ">=0.8"
+  }
+}
