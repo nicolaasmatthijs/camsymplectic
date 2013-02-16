@@ -10,6 +10,7 @@
   "dependencies": {
     "connect": "latest",
     "express": "latest",
+    "google-images": "latest",
     "request": "latest",
     "underscore": "latest",
     "xml2js": "latest"

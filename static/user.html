@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>PhysBio - Profile</title>
+
+    <!-- CORE CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/core.css" />
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/user.css" />
+
+    <!-- CORE JAVASCRIPT -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/trimpath.js"></script>
+    <script type="text/javascript" src="/js/bbq.js"></script>
+    <script type="text/javascript" src="/js/util.js"></script>
+    <!-- PAGE JAVASCRIPT -->
+    <script type="text/javascript" src="/js/user.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img id="cambridge-logo" src="/img/cambridge.png" />
+    </div>
+    <div id="title">
+        <h1><a href="/index.html">PhysBio Members</a> &nbsp;&raquo;&nbsp; <span id="user-fullName"></span></h1>
+    </div>
+    <div id="content">
+        <div id="user-basic"><!-- --></div>
+        <div id="user-publications"><!-- --></div>
+    </div>
+    <div id="user-basic-template"><!--
+        <img src="{if profilePictures[id]}${profilePictures[id]}{else}/img/profilepic.jpg{/if}" class="pull-left" />
+        <div>
+            <h3>${title} ${fullName}</a></h3>
+            <div>${post}</div>
+            <div class='muted'>${primaryGroup}</div>
+            <div class="user-email">E-mail: <a href="mailto:${emailAddress}">${emailAddress}</a></div>
+            <div>Date of birth: ${birthDate}</div>
+        </div>
+    --></div>
+    <div id="user-publications-template"><!--
+        {if results.length > 0}
+            <h4>Publications</h4>
+            <ul class="unstyled">
+                {for publication in results}
+                    <li>
+                        <div>
+                            <strong>${publication.title}</strong>
+                        </div>
+                        <div>
+                            <small>
+                                ${publication.authors.join(', ')} (${publication.year}) - ${publication.journal || publication.type}
+                                {if publication.url}
+                                    - <a href="${publication.url}" target="_blank">View</a>
+                                {/if}
+                            </small>
+                        </div>
+                {/for}
+            </ul>
+        {/if}
+    --></div>
+</body>
+</html>

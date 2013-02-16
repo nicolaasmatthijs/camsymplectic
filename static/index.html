@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>PhysBio - People</title>
+
+    <!-- CORE CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/css/core.css" />
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+
+    <!-- CORE JAVASCRIPT -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/trimpath.js"></script>
+    <script type="text/javascript" src="/js/util.js"></script>
+    <!-- PAGE JAVASCRIPT -->
+    <script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img id="cambridge-logo" src="/img/cambridge.png" />
+    </div>
+    <div id="title">
+        <h1>PhysBio Members</h1>
+    </div>
+    <div id="content">
+        
+    </div>
+    <div id="members_template"><!--
+        <ul class="thumbnails members-list">
+            {for member in results}
+                <li class="span5">
+                    <a href="/user.html?id=${member.id}">
+                        <img src="{if profilePictures[member.id]}${profilePictures[member.id]}{else}/img/profilepic.jpg{/if}" class="members-profile-pic pull-left" />
+                    </a>
+                    <div>
+                        <h4><a href="/user.html?id=${member.id}">${member.title} ${member.fullName}</a></h4>
+                        <span class="threedots">${member.post}</span>
+                        <span class='muted threedots'>${member.primaryGroup}</span>
+                    </div>
+                </li>
+            {/for}
+        </ul>
+    --></div>
+</body>
+</html>

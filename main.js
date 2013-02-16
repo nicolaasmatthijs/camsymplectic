@@ -9,6 +9,8 @@ var publicationAPI = require('./lib/publication');
 // Create the web server
 var server = express();
 server.listen(config.server.port);
+// Set up the static file hosting
+server.use('/', express.static(__dirname + '/static'));
 console.log('Started REST web server at http://localhost:' + config.server.port);
 
 

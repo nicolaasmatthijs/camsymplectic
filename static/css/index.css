@@ -1,0 +1,25 @@
+#title {
+    height: 220px;
+}
+
+#title h1 {
+    padding-top: 160px; 
+}
+
+#content {
+    margin: 60px 40px 40px;
+}
+
+.members-list li {
+    min-height: 120px;
+}
+
+.members-list h4 {
+    margin-top: 5px;
+}
+
+.members-list img {
+    width: 70px;
+    margin-right: 20px;
+    border: 1px solid #CCCCCC;
+}

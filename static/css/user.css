@@ -1,0 +1,18 @@
+#user-basic img {
+    width: 150px;
+    margin-right: 20px;
+    border: 1px solid #CCCCCC;
+}
+
+.user-email {
+    margin-top: 20px;
+}
+
+#user-publications {
+    clear: both;
+    margin-top: 50px;
+}
+
+#user-publications li {
+    margin-top: 20px;
+}
