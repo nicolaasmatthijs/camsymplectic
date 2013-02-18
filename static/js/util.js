@@ -23,7 +23,8 @@ var profilePictures = {
     '6': '/pictures/MichaelAkam.png',
     '94': '/pictures/NormanFleck.png',
     '3160': '/pictures/SophieJackson.png',
-    '3340': '/pictures/UlrichKeyser.png'
+    '3340': '/pictures/UlrichKeyser.png',
+    '3944': '/pictures/BenSimons.png'
 };
 
 // Variable that will cache all of the parsed Trimpath templates. This avoids the same
